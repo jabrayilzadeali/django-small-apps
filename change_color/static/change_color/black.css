@@ -1,0 +1,18 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+a {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}

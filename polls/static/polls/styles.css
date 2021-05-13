@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+a:hover {
+    color: red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}

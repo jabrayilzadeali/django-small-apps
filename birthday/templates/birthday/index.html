@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>is today is my birthday?</title>
+        <link rel="stylesheet" href="{% static 'birthday/styles.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1>Is today my birthday?</h1>
+        </header>
+        {% if date == 19 and month == 4 %}
+            <div class='YES'>
+                <h1>YES</h1>
+            </div>
+        {% else %}
+            <div class='NO'>
+                <h1>NO</h1>
+            </div>
+        {% endif %}
+        <a class='absolute' href="{% url 'index' %}">go back</a>
+    </body>
+</html>

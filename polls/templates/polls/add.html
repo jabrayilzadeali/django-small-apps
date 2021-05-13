@@ -1,0 +1,18 @@
+{% extends 'polls/layout.html' %}
+{% load static %}
+{% block loadStyle %}
+<link rel="stylesheet" href="{% static 'polls/styles.css' %}">
+<link rel="stylesheet" href="{% static 'polls/add.css' %}">
+{% endblock %}
+{% block mybody %}
+    <header>
+        <h1>Add Task</h1> 
+    <header>
+    <form action="{% url 'polls:add' %}" method='POST'>
+        {% csrf_token %}
+        <label for="mytask">add Task</label>
+        <input id='mytask' type="text" placeholder="Your Task" name="yourTask">
+        <input type="submit">
+    </form>
+    <a href="{% url 'polls:ultrapage' %}">Return to the myUltrapage to see your tasks</a>
+{% endblock %}

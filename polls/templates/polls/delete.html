@@ -1,0 +1,14 @@
+{% extends 'polls/layout.html' %}
+{% load static %}
+{% block loadStyle %}
+    <link rel="stylesheet" href="{% static 'polls/styles.css' %}">
+{% endblock %}
+{% block mybody %}
+    <header>
+        <h1>Are you sure to delete all Tasks</h1>
+    </header>
+    <form action="{% url 'polls:delete' %}" method="POST">
+        {% csrf_token %}
+        <input type="submit" placeholder="Delete">
+    </form>
+{% endblock %}

@@ -1,0 +1,27 @@
+
+{% extends 'polls/layout.html' %}
+{% load static %}
+
+{% block loadStyle %}
+    <link rel="stylesheet" href="{% static 'polls/myUltrapage.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/styles.css' %}">
+{% endblock %}
+
+{% block mybody %}
+    <header class='main_header'>
+        <h1>This is the ulrtapage bro</h1>
+    </header>
+    <ul>
+        <li class="list-for-navigation"><a href="{% url 'polls:index' %}" class="page-navigation">Go to the index page</a></li>
+    </ul>
+    <h2>Tasks</h2>
+    {% for i in ultratasks %}
+        <h3>{{ i }}</h3>
+    {% empty %}
+        <h3>You have no Task</h3>
+    {% endfor %}
+    <ul>
+    <li><a href="{% url 'polls:add' %}">add Task</a></li>
+    <li><a href="{% url 'polls:delete' %}">delete Task</a></li>
+    </ul>
+{% endblock %}

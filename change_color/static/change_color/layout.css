@@ -1,0 +1,23 @@
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+.container {
+    margin-left: 50px;
+}
+
+#goBack {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}

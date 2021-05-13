@@ -1,0 +1,27 @@
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 51px;
+    height: 20px;
+    padding: 10px;
+}
+
+.YES {
+    font-size: 3em;
+}
+
+.NO {
+    font-size: 2em;
+}

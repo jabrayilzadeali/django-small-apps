@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Color</title>
+            {% block mystyle %}
+            {% endblock %}
+    </head>
+    <body>
+        <div class="container">
+            {% block mybody %}
+            {% endblock %}
+            <h1>try to change colors</h1>
+            <ul>
+                <li><a href="{% url 'change_color:black' %}">black</a></li>
+                <li><a href="{% url 'change_color:green' %}">green</a></li>
+                <li><a href="{% url 'change_color:index' %}">white</a></li>
+                <li><a href="{% url 'change_color:red' %}">red</a></li>
+            </ul>
+            <a href="{% url 'index' %}" id="goBack">go back to main page</a>
+        </div>
+    </body>
+</html>

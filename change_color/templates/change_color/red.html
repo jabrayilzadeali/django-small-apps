@@ -1,0 +1,10 @@
+{% extends 'change_color/layout.html' %}
+{% load static %}
+{% block mystyle %}
+    <link rel="stylesheet" href="{% static 'change_color/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'change_color/red.css' %}">
+{% endblock %}
+
+{% block mybody %}
+<h1>Red world</h1>
+{% endblock %}

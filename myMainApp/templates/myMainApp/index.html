@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+    <head>
+        <title>The main page</title>
+        <link rel="stylesheet" href="{% static 'myMainApp/styles.css' %}">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the main page</h1>
+        </header>
+        <div class='component'>
+            <nav>
+                <ul>
+                    <div class='box item-1'>
+                        <li><a href="{% url 'birthday:index' %}">is Today my Birthday</a></li>
+                    </div>
+                    <div class='box item-2'>
+                        <li><a href="{% url 'polls:index' %}">Index for polls</a></li>
+                    </div>
+                    <div class='box item-3'>
+                        <li><a href="{% url 'myTasks' %}">My Tasks</a></li>
+                    </div>
+                    <div class='box item-3'>
+                        <li><a href="{% url 'change_color:index' %}">Change Color</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>
