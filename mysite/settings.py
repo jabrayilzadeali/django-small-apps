@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'my_auth',
     'change_color',
     'myTasks',
     'myMainApp',
