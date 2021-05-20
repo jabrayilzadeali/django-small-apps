@@ -1,4 +1,10 @@
 {% extends 'layout.html' %}
 {% block mybody %}
     <h1>Welcome to the login screen</h1>
+    <form action="{% url 'my_auth:login' %}" method="post">
+        {% csrf_token %}
+        {{ forms.as_p }}
+        <input type="submit" name="button" value="login">
+    </form>
+        <h3>If you don't have an account please <a href="{% url "my_auth:create_account" %}">create account</a></h3>
 {% endblock %}
